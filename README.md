@@ -64,11 +64,27 @@
 - Reduction in Memory Usage: It requires maintaining two separate search trees, which may reduce memory usage compared to traditional A* when searching in large graphs or environments.
 
 
+### RESULTS<hr>
+<img align="right" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/089a5459-453d-4d67-a8e9-9010e2a54d70' height=240>
+
+- The section alongside provides a visual representation of the obstacle map's final configuration, which consists of:
+  - **Start Node**: The initial position from which the robot begins its journey towards the goal. [10,10]
+  - **Goal Node**: The desired destination that the robot aims to reach. [50,50]
+  - **Optimal Path**
+  - **Meeting Point**: The point where the paths explored from the start and goal nodes converge. This point signifies the successful completion of the path planning process by Bidirectional A*, as it indicates the discovery of an optimal path connecting the start and goal nodes.
+
+
+<br><img src='https://github.com/krishnaura45/PathFinderX/assets/118080140/76b95e47-a546-4d73-8f38-de181707998f'>
+
+- The figures show initial, intermediate and final configurations when Bidirectional A* algorithm is applied on a particularly set environment. In all the images shown below (without grids), the starting point is located at (10,10) and the goal is located at (50,50) whereas the algorithm finds an optimal path and stops at location (35,35).
+- In the context of path planning algorithms like Bidirectional A*, **f(n)** represents the **estimated total cost of the path** from the start node to the goal node passing through node n. The role of this function is **to guide the search algorithm** towards nodes that are both **low-cost** (according to g(n)) and **promising in terms of their proximity to the goal** (according to h(n)). Nodes with **lower f(n) values** are prioritized for exploration by the search algorithm, as they are likely to lead to **more optimal paths**.
+
+
 ### CONCLUSIONS<HR>
-- Bidirectional A Superiority: Bidirectional A* outperforms other algorithms, offering efficiency and optimality in robotic path planning.
-- Successful Implementation: Bidirectional A* was successfully implemented after exploring A*, demonstrating its effectiveness.
-- Efficient and Optimal Results: Our algorithm consistently delivers efficient and optimal paths, meeting real-world navigation needs.
-- Enhanced Autonomy: Thus, it shows potential to enhance autonomy and efficiency in robotic applications, improving navigation capabilities.
+- **Superiority**: Bidirectional A* outperforms other algorithms, offering efficiency and optimality in robotic path planning.
+- **Successful Implementation**: Bidirectional A* was successfully implemented after exploring A*, demonstrating its effectiveness.
+- **Efficient and Optimal Results**: Our algorithm consistently delivers efficient and optimal paths, meeting real-world navigation needs.
+- **Enhanced Autonomy**: Thus, it shows potential to enhance autonomy and efficiency in robotic applications, improving navigation capabilities.
 
 
 ### REFERENCES<hr>
