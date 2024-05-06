@@ -1,13 +1,26 @@
 <h1 align="center">PathFinderX: Path Planning with Bidirectional A* Algorithm</h1>
 
 ### INTRODUCTION<hr>
-- Path planning is crucial in robotics for safe navigation. It involves finding the best route from a start to a goal while avoiding obstacles.
-- Bidirectional A*
-  - A pathfinding algorithm widely used in robotics for efficient path planning.
-  - simultaneously explores from start and goal nodes to find the shortest path efficiently.
-  - offers advantages such as reduced computational complexity and guaranteed optimality
-- Our project aims to implement and assess Bidirectional A* for robotic path planning, focusing on efficiency and optimality.
 
+<img align="right" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/8cc32d0f-66ff-4909-842e-e0429832d86a' height=280>
+
+- **Path planning** is crucial in **robotics** for **safe navigation**. It involves finding the best route from a start to a goal while avoiding obstacles.
+- Bidirectional A*
+  - A pathfinding algorithm widely used in robotics for **efficient** path planning.
+  - **simultaneously explores** from start and goal nodes to find the shortest path efficiently.
+  - offers advantages such as **reduced computational complexity** and **guaranteed optimality**.
+- This project **aims to implement** and assess Bidirectional A* for robotic path planning, focusing on efficiency and optimality.<br>
+
+### RELATED WORKS / ALGORITHMS<hr>
+<img align="center" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/ec7f3d0d-d7bb-4f20-bed2-7b20fe8dca2e' width=740>
+<img align="center" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/6ba76f8c-ce62-43f0-b233-20e4676031f5' width=740>
+
+### PROBLEM STATEMENT<hr>
+- **Autonomous robots require efficient path planning** to navigate obstacles and reach goals.
+- **Existing Solutions**: Traditional path planning algorithms like A* are effective but may suffer from high computational complexity, especially in large search spaces.
+- **Need for Improvement**: There is a need for more efficient path planning algorithms that can handle large-scale environments and complex robotic systems without sacrificing optimality.
+- This project aims to address this challenge by implementing the Bidirectional A* algorithm for robotic path planning.
+- The project will **explore the effectiveness of Bidirectional A*** in various robotic applications, considering factors such as algorithmic performance, computational resources, and real-world applicability.
 
 
 ### OBJECTIVES<hr>
