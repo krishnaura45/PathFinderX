@@ -29,6 +29,48 @@
 - Assess efficiency, optimality, and scalability compared to traditional algorithms.
 - Showcase practical benefits in real-world robotic navigation scenarios.
 
+### IMPLEMENTATION<HR>
+#### Exploration - A* Algorithm
+<img align="right" src='https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/Astar.gif' height=240>
+
+- A* algorithm is a popular heuristic search based algorithm used for pathfinding and optimization in graphical environments or grids.
+- It efficiently finds the shortest path from a start to a goal position in a graph (or grid) by combining Dijkstra's algorithm with heuristics.
+- It relies on a heuristic function (e.g., Manhattan distance) to estimate the cost to reach the goal from each node.
+- It guarantees finding the optimal path if certain conditions are met and is complete if a solution exists.
+- Limitations:
+  - The algorithm may consume significant memory, particularly in large graphs.
+  - Effectiveness depends on the quality of the heuristic function. Inaccurate or poorly chosen heuristics can lead to suboptimal paths or inefficient search behavior.
+
+#### Overview - Bidirectional A* Algorithm
+<img align="right" src='https://github.com/zhm-real/path-planning-algorithms/blob/master/Search_based_Planning/gif/Bi-Astar.gif' height=240>
+
+- Bidirectional A* is a variant of the A* algorithm used for path planning. It explores paths simultaneously from both the start and goal nodes towards each other.
+- Operation: Two search trees are maintained, one from the start node and one from the goal node. Nodes are expanded from both trees based on their heuristic estimates, with the goal of meeting in the middle to find the optimal path.
+- It reduces the search space by exploring from both ends simultaneously, resulting in faster convergence towards the optimal path compared to traditional A*.
+- Considerations:
+  - While Bidirectional A* offers advantages in terms of efficiency, it may require careful synchronization between the two search trees to ensure correct operation.
+  - Heuristic quality and selection can significantly impact the algorithm's performance and effectiveness in finding the optimal path.
+
+#### Pseudo code - Bidirectional A* Algorithm
+<img align="center" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/c1c93341-e550-4a03-83ab-25acebd98728' width=720><br>
+
+<img align="center" src='https://github.com/krishnaura45/PathFinderX/assets/118080140/d5eaf28c-f737-4862-a2a2-4ef2206baea4' width=300>
+
+####  Advantages - Bidirectional A* Algorithm
+- Efficiency: Bidirectional A* explores paths from both the start and goal nodes simultaneously, significantly reducing the search space and computational complexity compared to traditional A*.
+- Faster Convergence: By converging towards each other, the algorithm tends to find the optimal path more quickly, especially in large and complex environments, leading to faster navigation times.
+- Optimality Guarantee: It maintains the optimality of A* while offering improved efficiency, ensuring that the shortest path is found from the start to the goal node.
+- Scalability: The algorithm's ability to divide the search process into two independent sub-problems makes it well-suited for large-scale environments and complex robotic systems, enhancing scalability and performance.
+- Reduction in Memory Usage: It requires maintaining two separate search trees, which may reduce memory usage compared to traditional A* when searching in large graphs or environments.
+
+
+### CONCLUSIONS<HR>
+- Bidirectional A Superiority: Bidirectional A* outperforms other algorithms, offering efficiency and optimality in robotic path planning.
+- Successful Implementation: Bidirectional A* was successfully implemented after exploring A*, demonstrating its effectiveness.
+- Efficient and Optimal Results: Our algorithm consistently delivers efficient and optimal paths, meeting real-world navigation needs.
+- Enhanced Autonomy: Thus, it shows potential to enhance autonomy and efficiency in robotic applications, improving navigation capabilities.
+
+
 ### REFERENCES<hr>
 1) Pradhan, Rahul, Kartik Agrawal, and Anubhav Nag. "Analyzing Evolution of the Olympics by Exploratory Data Analysis using R." IOP Conference Series: Materials Science and Engineering. Vol. 1099. No. 1. IOP Publishing
 2) Mingyu Li. et al. Direction constraints adaptive extended bidirectional A* algorithm based on random two-dimensional map environments (2023). Retrieved from https://www.sciencedirect.com/science/article/abs/pii/S0921889023000696
